@@ -8,9 +8,9 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
 gulp.task('build', function () {
-  return browserify({ entries: ['./src/math.js'] })
+  return browserify({ entries: ['./src/maths.js'] })
     .bundle()
-    .pipe(source('math.js'))
+    .pipe(source('maths.js'))
     .pipe(buffer())
     .pipe(babel({
       presets: ['es2015']
@@ -19,9 +19,9 @@ gulp.task('build', function () {
 });
 
 gulp.task('min', function () {
-  return browserify({ entries: ['./src/math.js'] })
+  return browserify({ entries: ['./src/maths.js'] })
     .bundle()
-    .pipe(source('math.min.js'))
+    .pipe(source('maths.min.js'))
     .pipe(buffer())
     .pipe(babel({
       presets: ['es2015']
@@ -31,9 +31,9 @@ gulp.task('min', function () {
 });
 
 gulp.task('debug', function () {
-  return browserify({ entries: ['./src/math.js'], debug: true })
+  return browserify({ entries: ['./src/maths.js'], debug: true })
     .bundle()
-    .pipe(source('math.js'))
+    .pipe(source('maths.js'))
     .pipe(buffer())
     .pipe(babel({
       presets: ['es2015']
