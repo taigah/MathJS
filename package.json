@@ -1,21 +1,21 @@
 {
   "name": "mathsjs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Math library for Javascript",
-  "main": "./src/mathjs",
+  "main": "./src/mathjs.j",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taigah/Maths JS.git"
+    "url": "git+https://github.com/taigah/MathsJS.git"
   },
   "author": "Taigah <taigah.dev@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/taigah/Maths JS/issues"
+    "url": "https://github.com/taigah/MathsJS/issues"
   },
-  "homepage": "https://github.com/taigah/Maths  JS#readme",
+  "homepage": "https://github.com/taigah/MathsJS#readme",
   "dependencies": {
   },
   "devDependencies": {
