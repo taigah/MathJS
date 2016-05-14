@@ -1,2 +1,2 @@
-# MathJS
+# MathsJS
 Math library for Javascript

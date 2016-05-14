@@ -104,7 +104,8 @@ class Vector {
   add(vector) { return Vector.add(this, vector) }
   dot(vector) { return Vector.dot(this, vector) }
   getCos(vector) { return Vector.getCos(this, vector) }
-  getAngle(vector) { return Vector.getAngle(this, vector) }
+  getAngle(vector, unit = 'rad') { return Vector.getAngle(this, vector, unit) }
+  getAxisAngle(unit = 'rad') { return Vector.getAngle(this, new Vector(1, 0), unit) }
 
 }
 

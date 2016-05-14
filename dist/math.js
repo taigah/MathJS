@@ -91,7 +91,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getAngle",
         value: function getAngle(vector) {
-          return Vector.getAngle(this, vector);
+          var unit = arguments.length <= 1 || arguments[1] === undefined ? 'rad' : arguments[1];
+          return Vector.getAngle(this, vector, unit);
+        }
+      }, {
+        key: "getAngleAxis",
+        value: function getAngleAxis() {
+          var unit = arguments.length <= 0 || arguments[0] === undefined ? 'rad' : arguments[0];
+          return Vector.getAngle(this, new Vector(1, 0), unit);
         }
       }], [{
         key: "norm",
