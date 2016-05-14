@@ -1,6 +1,6 @@
 {
-  "name": "mathjs",
-  "version": "1.0.0",
+  "name": "mathsjs",
+  "version": "1.1.0",
   "description": "Math library for Javascript",
   "main": "./src/mathjs",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taigah/MathJS.git"
+    "url": "git+https://github.com/taigah/Maths JS.git"
   },
   "author": "Taigah <taigah.dev@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/taigah/MathJS/issues"
+    "url": "https://github.com/taigah/Maths JS/issues"
   },
-  "homepage": "https://github.com/taigah/MathJS#readme",
+  "homepage": "https://github.com/taigah/Maths  JS#readme",
   "dependencies": {
   },
   "devDependencies": {
