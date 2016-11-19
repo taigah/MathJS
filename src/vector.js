@@ -46,7 +46,7 @@ class Vector {
   }
 
   /**
-   * Sum two vectors
+   * Adds two vectors
    * @param {Vector} vector1
    * @param {Vector} vector2
    * @return {Vector}
@@ -55,6 +55,19 @@ class Vector {
     return new Vector(
       vector1.x + vector2.x,
       vector1.y + vector2.y
+    )
+  }
+
+  /**
+   * Subtracts two vectors
+   * @param {Vector} vector1
+   * @param {Vector} vector2
+   * @return {Vector}
+   */
+  static subtract(vector1, vector2) {
+    return new Vector(
+      vector1.x - vector2.x,
+      vector1.y - vector2.y
     )
   }
 
@@ -104,6 +117,16 @@ class Vector {
     return new Vector(vector1.x * vector2.x, vector1.y * vector2.y)
   }
 
+  /**
+   * Checks if two vectors are equal
+   * @param  {Vector]} vector1
+   * @param  {Vector]} vector2
+   * @return {Boolean}
+   */
+  static equals(vector1, vector2) {
+    return vector1.x === vector2.x && vector1.y === vector2.y
+  }
+
   /*
     Aliases
    */
@@ -112,11 +135,13 @@ class Vector {
   normalize() { return Vector.normalize(this) }
   scale(scale) { return Vector.scale(this, scale) }
   plus(vector) { return Vector.add(this, vector) }
+  minus(vector) { return Vector.subtract(this, vector) }
   dot(vector) { return Vector.dot(this, vector) }
   getCos(vector) { return Vector.getCos(this, vector) }
   getAngle(vector, unit = 'rad') { return Vector.getAngle(this, vector, unit) }
   getAxisAngle(unit = 'rad') { return Vector.getAngle(this, new Vector(1, 0), unit) }
   times(vector) { return Vector.multiply(this, vector) }
+  equals(vector) { return Vector.equals(this, vector) }
 
 }
 
