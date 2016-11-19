@@ -94,6 +94,16 @@ class Vector {
     return angle
   }
 
+  /**
+   * Multiply two vectors coordinates
+   * @param  {Vector} vector1
+   * @param  {Vector} vector2
+   * @return {Vector}
+   */
+  static multiply(vector1, vector2) {
+    return new Vector(vector1.x * vector2.x, vector1.y * vector2.y)
+  }
+
   /*
     Aliases
    */
@@ -101,11 +111,12 @@ class Vector {
   norm() { return Vector.norm(this) }
   normalize() { return Vector.normalize(this) }
   scale(scale) { return Vector.scale(this, scale) }
-  add(vector) { return Vector.add(this, vector) }
+  plus(vector) { return Vector.add(this, vector) }
   dot(vector) { return Vector.dot(this, vector) }
   getCos(vector) { return Vector.getCos(this, vector) }
   getAngle(vector, unit = 'rad') { return Vector.getAngle(this, vector, unit) }
   getAxisAngle(unit = 'rad') { return Vector.getAngle(this, new Vector(1, 0), unit) }
+  times(vector) { return Vector.multiply(this, vector) }
 
 }
 
