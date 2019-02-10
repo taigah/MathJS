@@ -1,2 +1,2 @@
-# MathsJS
-Math library for Javascript
+# MathsJS (unmainted)
+Math library for Javascript. **Unmainted, you souldn't use it.**
